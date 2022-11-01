@@ -5,6 +5,8 @@ import 'package:native_feature_app/providers/places_provider.dart';
 import 'package:native_feature_app/widgets/image_input.dart';
 import 'package:provider/provider.dart';
 
+import '../widgets/location_input.dart';
+
 class Add_Place_Screen extends StatefulWidget {
   static const routeName='/add_place_screen';
   @override
@@ -59,6 +61,8 @@ class _Add_Place_ScreenState extends State<Add_Place_Screen> {
                       ),
                     ),
                     ImageInput(_setPickedImage),
+                    SizedBox(height: 10,),
+                    LocationInput(),
                   ],
                 ),
               ),
